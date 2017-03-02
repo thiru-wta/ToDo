@@ -1,0 +1,30 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wtastudios.todo.MainActivity"
+    >
+    <item
+    android:id="@+id/action_settings"
+    android:orderInCategory="100"
+    android:title="@string/action_settings"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/copy"
+        android:orderInCategory="100"
+        android:title="@string/copy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setUpdate"
+        android:orderInCategory="100"
+        android:title="@string/update"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/view12"
+        android:orderInCategory="1"
+        android:icon="@drawable/mdpi"
+        app:showAsAction="always"
+        android:title="next_page"/>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_items_to_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wtastudios.todo.AddItemsToList">
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/textColorPrimary"
+        android:text="@string/welcomUser"
+        />
+    <TextView
+        android:id="@+id/welcomeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcomeUSer2"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_alignStart="@id/welcomeUser"
+        android:layout_below="@id/welcomeUser"
+        android:layout_marginBottom="50dp"
+        android:layout_alignLeft="@id/welcomeUser" />
+
+    <TextView
+        android:id="@+id/add_first_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+
+        android:background="@drawable/round_text_add_item"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="25sp"
+        android:onClick="addFirstItem"
+        android:textColor="#ffff"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

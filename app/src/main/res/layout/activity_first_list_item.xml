@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_items_to_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.wtastudios.todo.AddItemsToList">
+    <TextView
+        android:id="@+id/firstEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/textColorPrimary"
+        android:text="It's your first event"
+        />
+    <TextView
+        android:id="@+id/eventDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Drag right to remove"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_below="@id/firstEvent"
+        android:layout_marginBottom="50dp"
+        />
+    <android.support.v7.widget.RecyclerViewView
+        android:id="@+id/firstEventList"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@id/eventDesc"
+        >
+
+    </android.support.v7.widget.RecyclerViewView>
+
+
+</RelativeLayout>
